@@ -1,0 +1,26 @@
+<div class="card my-2" id="${this.viewerWrapId}">
+    <div class="mb-0 d-flex align-items-center">
+        <button
+            class="btn btn-link text-left collapsed"
+            data-toggle="collapse"
+            data-target="#collapse999999"
+        >
+            ${subject}
+        </button>
+        <div class="ml-auto mr-3">
+            <a href="#edit" class="text-secondary text-decoration-none">
+                <i class="far fa-edit"></i>
+            </a>
+            <a href="#delete" class="text-secondary text-decoration-none">
+                <i class="far fa-trash-alt"></i>
+            </a>
+        </div>
+    </div>
+    <div
+        id="collapse999999"
+        class="collapse border-top"
+        data-parent="#accordion"
+    >
+        <div class="px-3 py-2" id="${setViewerIdName}">${content}</div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+a {
+    text-decoration: none;
+}
+
+body.wrap {    
+    background-color: $all--bgColor;
+    font-family: $all--fontFamily;
+}
+
+body.h-100vh {
+    height: 100vh;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.all-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bg__img--full {
+    background: no-repeat center center scroll;    
+    background-size: cover;    
+}
+
+.display--none {
+    display: none;
+}
+
+.ft--15 {
+    font-size: 15px;
+}
+
+
+// 애니메이션 ---------------------------------------------------
+
+@keyframes fadeIn  {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;        
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;        
+        transform: none;
+    }
+}
+
+// fadeIn
+.animation__fadeIn {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+// fadeIn (first ~ fourth)
+.fadeIn {
+    &--first {
+        animation-delay: 0.4s;
+    }
+
+    &--second {
+        animation-delay: 0.6s;
+    }
+
+    &--third {
+        animation-delay: 0.8s;
+    }
+
+    &--fourth {
+        animation-delay: 1s;
+    }
+}
+
+// fadeDown
+.animation__fadeDown {    
+    animation-name: fadeInDown;
+    animation-duration: 1s;    
+    animation-fill-mode: both;
+}

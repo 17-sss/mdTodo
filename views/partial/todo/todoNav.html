@@ -1,0 +1,17 @@
+<div class="todo__nav__pt-56"></div>
+<nav class="navbar navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/todo"><%= title %></a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <span class="d-inline mr-3 todo__nav__welcome">                    
+                    Hello,
+                    <span class="font-weight-normal">
+                        <%= userDisplayId %>
+                    </span>                    
+                </span>
+                <a class="nav-link d-inline" href="/auth/logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>

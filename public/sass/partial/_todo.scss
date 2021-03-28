@@ -1,0 +1,41 @@
+.todo__wrapper {    
+    width: 100%;
+    min-height: 100%;    
+}
+
+// Nav
+.todo__nav {
+    &__welcome {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    &__pt-56 {
+        padding-top: 56px;
+    }
+}
+
+// Post List (todo Main)
+.todo__postlist {
+    &__delete--btn {
+        background: none;        
+        border: none;
+        padding: 0;
+        font: inherit;        
+        outline: inherit;
+    }
+
+    &__delete--btn:hover {
+        color: #596066 !important;
+    }
+}
+
+// Footer
+.todo__footer {    
+    &__text {
+        font-size: 12px;
+    }
+    &__pb-34 {
+        padding-bottom: 34px;
+    }    
+}

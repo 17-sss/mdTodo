@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <%- include('./partial/vendors.html') %>
+    </head>
+
+    <body class="wrap">
+        <div class="todo__wrapper">
+            <!-- 1. Nav -->
+            <%- include('./partial/todo/todoNav.html') %>
+
+            <!-- 2. editor -->
+            <%- include('./partial/todo/todoEditor.html') %>
+
+            <!-- 3. Footer -->
+            <%- include('./partial/todo/todoFooter.html') %>
+        </div>
+    </body>
+</html>

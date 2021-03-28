@@ -1,0 +1,32 @@
+<form
+    class="container bg-light rounded-sm p-3 my-3"
+    method="POST"
+    id="todo-writeForm"
+>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Subject</span>
+        </div>
+        <input
+            type="text"
+            name="subject"
+            value="<%= subject %>"
+            class="form-control"
+            id="subject"
+            autocomplete="off"
+            required
+        />        
+    </div>
+
+    <div class="card p-1 my-2 container" id="toast-editor"></div>
+    <input type="hidden" name="content" id="content" value="<%= content %>" />
+    <input type="hidden" name="todoId" id="todoId" value="<%= todoId %>" />
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary mr-1">Confirm</button>
+        <button type="button" class="btn btn-secondary" id="cancel">
+            Cancel
+        </button>
+    </div>
+
+</form> 

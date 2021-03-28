@@ -1,0 +1,55 @@
+<!-- auth : register -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <%- include('./partial/vendors.html') %>
+    </head>
+    <body class="wrap h-100vh">
+        <div class="auth__wrapper" id="auth-register">
+            <div class="auth__content">
+                <div>
+                    <h2>MD Todo</h2>
+                </div>
+
+                <form
+                    class="auth__content__form"
+                    method="POST"
+                    action="/auth/register"
+                >
+                    <input
+                        type="text"
+                        name="userid"
+                        id="userid"
+                        placeholder="ID"
+                        autocomplete="off"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="userpwd"
+                        id="userpwd"
+                        placeholder="Password"
+                        autocomplete="off"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="userpwd_chk"
+                        id="userpwd_chk"
+                        placeholder="Password (Confirm)"
+                        autocomplete="off"
+                        required
+                    />
+                    <input type="submit" value="Confirm" />
+
+                    <p class="auth--error display--none"></p>
+                </form>
+
+                <div class="auth__footer">
+                    <a href="/auth/login">Login</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
